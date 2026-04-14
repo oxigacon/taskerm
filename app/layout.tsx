@@ -11,12 +11,15 @@ export const metadata: Metadata = {
   title: "Task Tracker",
   description: "Minimalistic offline-capable task manager.",
   manifest: "/manifest.json",
-  themeColor: "#ffffff",
   appleWebApp: {
     capable: true,
     title: "Task Tracker",
     statusBarStyle: "default",
   },
+};
+
+export const viewport = {
+  themeColor: "#ffffff",
 };
 
 export default function RootLayout({
