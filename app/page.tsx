@@ -124,7 +124,7 @@ export default function Home() {
       <main className="container" style={{ textAlign: "center", marginTop: "10rem" }}>
         <h1 style={{ marginBottom: "2rem" }}>Task Tracker</h1>
         <button
-          onClick={() => supabase.auth.signInWithOAuth({ provider: "google" })}
+          onClick={() => supabase.auth.signInWithOAuth({ provider: "google", options: { redirectTo: `${window.location.origin}` } })}
           style={{ padding: "0.75rem 1.5rem", border: "1px solid var(--c-border)", borderRadius: "4px" }}
         >
           Sign in with Google
